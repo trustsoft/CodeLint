@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLint.CSharp", "src\CodeLint.CSharp\CodeLint.CSharp.csproj", "{5E87DED8-15A4-4413-8C1B-5D526DD07F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLint.Analyzers.Vsix", "src\CodeLint.Analyzers.Vsix\CodeLint.Analyzers.Vsix.csproj", "{0858744A-23D3-4E10-8F93-DF65EEFDA26E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{676F244A-26B2-4751-BBEF-030BAA351FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLint.Analyzers.Test", "src\Tests\CodeLint.Analyzers.Test\CodeLint.Analyzers.Test.csproj", "{8321364F-1FFE-466F-A711-8B7F3A05B143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3C40BB6F-4B7E-4D08-A39D-CD457B698C50}"
+	ProjectSection(SolutionItems) = preProject
+		.package\.nuspec = .package\.nuspec
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.package\readme.txt = .package\readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{AA8D9385-976E-4BBE-912A-34236E6ABA4E}"
+	ProjectSection(SolutionItems) = preProject
+		.build\build.cmd = .build\build.cmd
+		.build\build.NuGetPackage.cmd = .build\build.NuGetPackage.cmd
+		.build\build.Release.cmd = .build\build.Release.cmd
+		.build\CodeLint.Analyzers.targets = .build\CodeLint.Analyzers.targets
+		.build\make.Release.cmd = .build\make.Release.cmd
+		.build\publish.MyGet.cmd = .build\publish.MyGet.cmd
+		.build\publish.NuGet.cmd = .build\publish.NuGet.cmd
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E87DED8-15A4-4413-8C1B-5D526DD07F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E87DED8-15A4-4413-8C1B-5D526DD07F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E87DED8-15A4-4413-8C1B-5D526DD07F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E87DED8-15A4-4413-8C1B-5D526DD07F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0858744A-23D3-4E10-8F93-DF65EEFDA26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0858744A-23D3-4E10-8F93-DF65EEFDA26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0858744A-23D3-4E10-8F93-DF65EEFDA26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0858744A-23D3-4E10-8F93-DF65EEFDA26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8321364F-1FFE-466F-A711-8B7F3A05B143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8321364F-1FFE-466F-A711-8B7F3A05B143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8321364F-1FFE-466F-A711-8B7F3A05B143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8321364F-1FFE-466F-A711-8B7F3A05B143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8321364F-1FFE-466F-A711-8B7F3A05B143} = {676F244A-26B2-4751-BBEF-030BAA351FFD}
+	EndGlobalSection
+EndGlobal

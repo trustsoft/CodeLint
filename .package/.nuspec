@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>CodeLint.Analyzers</id>
+    <title>CodeLint.Analyzers</title>
+    <version>1.0.0.0</version>
+    <authors>Sukhanov Maxim</authors>
+    <owners>Sukhanov Maxim</owners>
+    <summary>CodeLint.Analyzers for CSharp.</summary>
+    <description>This package provides on-the-fly feedback to developers on new bugs and quality issues injected into C# code.</description>
+    <language>en-US</language>
+    <releaseNotes>Add more rules.</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright © Trustsoft Ltd. 2012-2016</copyright>
+    <tags>C#, C#Lint, CSharpLint, Analysis, Roslyn, CodeAnalysis, Analyzer, Code analysis, Code Quality, Quality</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+  <!-- The convention for analyzers is to put language agnostic dlls in analyzers\portable50 and language specific analyzers in either analyzers\portable50\cs or analyzers\portable50\vb -->
+  <files>
+    <file src="..\Binaries\Release\*.dll" target="analyzers\dotnet\cs" exclude="**\Microsoft.CodeAnalysis.*;**\System.Collections.Immutable.*;**\System.Reflection.Metadata.*;**\System.Composition.*" />
+    <file src="tools\*.ps1" target="tools\" />
+    <file src="lib\**\*.*" target="lib"/>
+    <file src="readme.txt" target="" />
+  </files>
+</package>
